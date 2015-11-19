@@ -18,6 +18,6 @@ namespace Scrabble.Game_Objects
         /// Play parameter might need to be traced to its location once created.
         /// </summary>
         /// <param name="play">Receives a play and applys that to tiles.</param>
-        public void AddPlayToBoard(Play play) { }
+        public void AddPlayToBoard(Scrabble.Play play) { }
     }
 }

@@ -12,7 +12,7 @@ namespace Scrabble.Game_Objects
     class TurnOrder
     {
         private int turnOrderIndex;
-        private List<Player> turnQueue = new List<Player>();
+        private List<Scrabble.PlayerClass.Player> turnQueue = new List<Scrabble.PlayerClass.Player>();
 
         public TurnOrder()
         {
@@ -42,7 +42,7 @@ namespace Scrabble.Game_Objects
         /// </summary>
         /// <param name="player"></param>
         /// <returns></returns>
-        public bool containsPlayer(Player player)
+        public bool containsPlayer(PlayerClass.Player player)
         {
             return turnQueue.Contains(player);
         }
