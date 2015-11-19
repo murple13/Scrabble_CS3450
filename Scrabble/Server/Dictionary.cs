@@ -11,10 +11,13 @@ namespace Scrabble.Server
     /// containsWord(string word) that checks if a given word is in the 
     /// dictionary. 
     /// </summary>
-    class Dictionary
+    public class Dictionary
     {
         private List<String> dictionary = new List<String>();
-
+        /// <summary>
+        /// Takes in a dictionary text file, reads the contents to a list.
+        /// </summary>
+        /// <param name="filename"></param>
         public Dictionary(String filename)
         {
             try
@@ -34,6 +37,11 @@ namespace Scrabble.Server
                 Console.WriteLine(e.Message);
             }
         }
+        /// <summary>
+        /// Checks to see if a word is contained in the dictionary by using List.Contains(word)
+        /// </summary>
+        /// <param name="word"></param>
+        /// <returns></returns>
         public bool containsWord(String word)
         {
             if (dictionary.Contains(word)) { return true; }
